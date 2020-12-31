@@ -1,0 +1,83 @@
+input[type="file"] {
+  display: none;
+}
+input[type="submit"] {
+  background-color: #337ab7;
+  border: 1px solid #2e6da4;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 5px;
+  padding: 3px 5px;
+  color: white;
+}
+input[type="submit"]:hover {
+  background-color: rgb(50, 50, 220);
+  border: 1px solid #2e6da4;
+  box-shadow: 3px 3px 7px #0088ff;
+}
+input[type="submit"]:disabled {
+  background-color: grey;
+  border: 1px solid white;
+  box-shadow: none;
+}
+.App {
+  min-width: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.chooseFile {
+  background-color: lawngreen;
+  border: 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Comic Sans MS", Courier, monospace;
+  margin: 5px;
+  padding: 3px 5px;
+  color: white;
+}
+.chooseFile:hover {
+  background-color: rgb(159, 255, 64);
+  border: 1px solid lawngreen;
+  box-shadow: 4px 4px 3px rgb(161, 247, 76);
+}
+.fileName {
+  margin-top: 10px;
+}
+.progressBar {
+  width: 10px;
+  border: 2px solid green;
+  border-radius: 15px;
+  width: 200px;
+}
+.progressNo1,
+.progressNo2 {
+  border-radius: 15px;
+  background-color: lawngreen;
+  text-align: end;
+}
+.toastContainer {
+  max-width: 250px;
+  position: absolute;
+  right: 10px;
+  border-radius: 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode";
+  font-size: 16px;
+  padding: 10px 6px;
+}
+.uploadBox {
+  min-width: 300px;
+  min-height: 200px;
+  margin: 10px 5px;
+  padding: 8px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid black;
+}
