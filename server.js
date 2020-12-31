@@ -75,6 +75,14 @@ server.post(
   }
 );
 
+if (process.env.NODE_ENV == "production") {
+  server.use(express.static("mul-file-frontend/build"));
+  const path = require("path");
+  server.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "mul-file-frontend", "build", "index.html"));
+  });
+}
+
 server.listen(port, () => {
   console.log("server.js is running at http://localhost:" + port);
 });
