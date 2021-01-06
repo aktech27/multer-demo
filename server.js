@@ -84,5 +84,6 @@ if (process.env.NODE_ENV == "production") {
 }
 
 server.listen(port, () => {
-  console.log("server.js is running at http://localhost:" + port);
+  console.log("Working Directory:"+ process.cwd());
+  console.log("server.js is running at Port:" + port);
 });
